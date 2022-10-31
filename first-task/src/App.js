@@ -13,7 +13,7 @@ function App() {
       </header>
 
       <main>
-        <Link title="Twitter Link" id="twitter" link="#" />
+        <Link title="Twitter Link" id="twitter" link="https://twitter.com/search?q=lolaakinrinsola&src=typed_query" />
         <Link title="Zuri Team" id="btn_zuri" link="https://training.zuri.team/" /> 
         <Link title="Zuri Books" id="books" link="http://books.zuri.team" />
         <Link title="Python Books" id="book_python" link="https://books.zuri.team/python-for-beginners?ref_id=lola-akinrinsola" />

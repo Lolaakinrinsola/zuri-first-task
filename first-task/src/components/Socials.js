@@ -11,7 +11,7 @@ export function Socials(){
                     <img src="../../logo/vectorone.svg"/>
                 </div>
             </div>
-            <img src="../../icon.png" className="icon"/>
+            <img src="../../Icon.png" className="icon"/>
         </>
     )
 }
