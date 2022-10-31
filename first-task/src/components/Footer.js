@@ -11,7 +11,7 @@ export function Footer(){
             </div>
 
             <div>
-                <img src="../../I4G.jpg" />
+                <img src="../../oneLogo.jpg" />
             </div>
         </>
     )
