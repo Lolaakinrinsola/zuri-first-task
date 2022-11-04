@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+.contactBody{
+    margin:0 16px;
+    font-family: 'Inter', sans-serif;
+    width: calc(100% - 32px);
+}
+.header{
+    margin: 2em 0;
+    h1{
+        padding-bottom: 0.5em;
+        font-size: 2.25em;
+        color: #101828;
+    }
+    p{
+        font-size: 1em;
+        font-weight: 400;
+        margin: 0;
+        color: #475467;
+    }
+}
+form{
+    display: grid;
+    .contact_input{
+        display: grid;
+        margin-bottom: 0.5em;
+        label,p{
+            font-size: 0.875em;
+            font-weight: 500;
+            color: #344054;
+            margin-bottom: .2em;
+        }
+        .errorText{
+            color:red
+        }
+    }
+    input, textarea{
+        padding: 0.625em 0.875em;
+        border: 0.0625em solid #d0d5dd;
+        border-radius: 0.5em;
+        box-shadow: 0 0.0625em 0.125em rgba(16, 24, 40, 0.05);
+    }
+}
+.errorDiv{
+    input,textarea{
+        border: red solid 0.0625em;
+    }
+}
+#btn__submit{
+    background: #1570ef;
+    padding: 0.75em 1.25em;
+    border: 0.0625em solid #1570ef;
+    box-shadow: 0 0.0625em 0.125em rgba(16, 24, 40, 0.05);
+    border-radius: 0.5em;
+    width: 23.4375em;
+    color: white;
+    margin-bottom: 4em;
+    &:hover{
+        background: #175cd3;
+        border: 0.0625em solid #175cd3;
+    }
+    &:active{
+        background: #1570ef;
+        border: 0.0625em solid #1570ef;
+    }
+    &:disabled{
+        background: #b2ddff;
+        border: 0.0625em solid #b2ddff;
+    }
+}
+.checkbox{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5em;
+    input{
+        margin-right: 0.75em;
+        &:hover{
+            border: 0.0625em solid #84CAFF;
+            box-shadow: 0 0 0 0.25em #D1E9FF;
+            border-radius: 0.375em;
+        }
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .contactBody{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .body{
+        width: 45em;
+    }
+    form{
+        textarea{
+            padding-top: 1em;    
+        }
+        .names{
+            display: flex;
+            gap: 1em;
+            input{
+                width: 24.2em;
+            }
+        }
+    }
+    #btn__submit{
+        width: 54em;
+    }
+
+}
