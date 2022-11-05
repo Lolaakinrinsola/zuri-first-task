@@ -73,7 +73,11 @@ export function Contact(){
 
 
 
-    const errorClasses = !firstNameisInvalid|!lastNameisInvalid|!messageInvalid|emailInvalid? 'contact_input':'contact_input errorDiv'
+    const errorClasses = !firstNameisInvalid? 'contact_input':'contact_input errorDiv'
+    const errorLastNameClasses =!lastNameisInvalid? 'contact_input':'contact_input errorDiv'
+    const errorMessageClasses = !messageInvalid? 'contact_input':'contact_input errorDiv'
+    const errorEmailClasses = !emailInvalid? 'contact_input':'contact_input errorDiv'
+
     const errorBtn= checked?'':'true';
 
     return(
@@ -95,19 +99,19 @@ export function Contact(){
                 <input type="text" placeholder="Enter your first name" name="first_name" id="first_name" onChange={firstNameChangeHandler} />
                 {firstNameisInvalid &&<p className="errorText">please enter your First name</p>}
             </div>
-            <div className={errorClasses}>
+            <div className={errorLastNameClasses}>
                 <label htmlFor="last_name">Last name</label>
                 <input type="text" placeholder="Enter your last name" name="last_name" id="last_name" onChange={lastNameChangeHandler}/>
                 {lastNameisInvalid &&<p className="errorText">please enter your Last name</p>}
 
             </div>
             </div>
-            <div className={errorClasses}>
+            <div className={errorEmailClasses}>
                 <label htmlFor="email">Email</label>
                 <input type="email" placeholder="yourname@email.com" name="email" id="email" onChange={emailChangeHandler}/>
                 {emailInvalid &&<p className="errorText">please enter your email</p>}
             </div>
-            <div className={errorClasses}>
+            <div className={errorMessageClasses}>
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="5" 
                     placeholder="Send me a message and I'll reply you as soon as possible..." onChange={messageChangeHandler}>
