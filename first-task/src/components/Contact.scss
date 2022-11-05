@@ -57,6 +57,7 @@ form{
     border-radius: 0.5em;
     width: 23.4375em;
     color: white;
+    width: 100%;
     margin-bottom: 4em;
     &:hover{
         background: #175cd3;
@@ -108,8 +109,6 @@ form{
             }
         }
     }
-    #btn__submit{
-        width: 54em;
-    }
+   
 
 }
